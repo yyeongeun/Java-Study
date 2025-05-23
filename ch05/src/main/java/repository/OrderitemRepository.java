@@ -1,10 +1,10 @@
 package repository;
 
-import entity.shop.Orderitem;
+import entity.shop.OrderItem;
 import jpa.JpaRepository;
 
-public class OrderitemRepository extends JpaRepository<Orderitem, Integer> {
+public class OrderitemRepository extends JpaRepository<OrderItem, Integer> {
     public OrderitemRepository() {
-        super(Orderitem.class);
+        super(OrderItem.class);
     }
 }

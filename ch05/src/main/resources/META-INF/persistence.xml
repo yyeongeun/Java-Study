@@ -5,7 +5,7 @@
         <class>entity.User1</class>
         <class>entity.shop.Customer</class>
         <class>entity.shop.Order</class>
-        <class>entity.shop.Orderitem</class>
+        <class>entity.shop.OrderItem</class>
         <class>entity.shop.Product</class>
 
         <properties>

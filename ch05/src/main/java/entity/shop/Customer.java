@@ -1,12 +1,12 @@
 package entity.shop;
 
-import jakarta.persistence.Entity;
-import jakarta.persistence.Id;
-import jakarta.persistence.Table;
+import jakarta.persistence.*;
 import lombok.Data;
 import org.hibernate.annotations.CreationTimestamp;
 
 import java.time.LocalDateTime;
+import java.util.ArrayList;
+import java.util.List;
 
 @Data
 @Entity
@@ -18,6 +18,10 @@ public class Customer {
     private String name;
     private int age;
     private String addr;
+
+    @OneToMany(fetch = FetchType.LAZY, mappedBy = "")
+    private List<OrderItem> orderItems = new ArrayList<>();
+
     @CreationTimestamp
     private LocalDateTime regDate;
 
